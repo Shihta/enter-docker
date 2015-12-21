@@ -1,0 +1,11 @@
+Source: enter-docker
+Maintainer: Shihta (@Nantou) <kuster.die9841+lp@gmail.com>
+Build-Depends: debhelper (>= 9), libncurses5-dev, libslang2-dev, gettext, zlib1g-dev, libselinux1-dev, lsb-release, pkg-config, po-debconf, autoconf, automake, autopoint, libtool
+Standards-Version: 3.9.5
+Homepage: https://github.com/Shihta/enter-docker
+
+Package: enter-docker
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, docker-engine
+Description: A command to enter docker container
+
